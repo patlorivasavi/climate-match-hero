@@ -8,9 +8,9 @@ interface Props {
 }
 
 const sizeClasses = {
-  sm: "w-14 h-16 text-xl",
-  md: "w-18 h-20 text-2xl",
-  lg: "w-20 h-24 text-3xl",
+  sm: "w-[3.2rem] h-[3.8rem] text-xl",
+  md: "w-[4.5rem] h-[5.2rem] text-3xl",
+  lg: "w-[5.5rem] h-[6.5rem] text-4xl",
 };
 
 export default function FlipCard({ card, onClick, size }: Props) {
