@@ -52,11 +52,11 @@ export default function GameBoard() {
       </div>
 
       {/* Grid */}
-      <div className="flex-1 flex items-center justify-center px-3 py-2">
+      <div className="flex-1 flex items-center justify-center px-2 py-2 overflow-auto">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="grid gap-2"
+          className="grid gap-2.5"
           style={{
             gridTemplateColumns: `repeat(${config.cols}, 1fr)`,
           }}

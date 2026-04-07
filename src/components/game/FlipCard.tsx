@@ -8,9 +8,9 @@ interface Props {
 }
 
 const sizeClasses = {
-  sm: "w-14 h-16 text-xl",
-  md: "w-18 h-20 text-2xl",
-  lg: "w-20 h-24 text-3xl",
+  sm: "w-[3.2rem] h-[3.8rem] text-xl",
+  md: "w-[4.5rem] h-[5.2rem] text-3xl",
+  lg: "w-[5.5rem] h-[6.5rem] text-4xl",
 };
 
 export default function FlipCard({ card, onClick, size }: Props) {
@@ -47,7 +47,7 @@ export default function FlipCard({ card, onClick, size }: Props) {
           }`}
         >
           <span className={sizeClasses[size].split(" ").pop()}>{card.emoji}</span>
-          <span className="text-[8px] sm:text-[9px] text-foreground/70 font-body font-semibold mt-0.5 px-1 text-center leading-tight">
+          <span className="text-[9px] sm:text-[10px] text-foreground/70 font-body font-semibold mt-1 px-1 text-center leading-tight">
             {card.label}
           </span>
         </div>
