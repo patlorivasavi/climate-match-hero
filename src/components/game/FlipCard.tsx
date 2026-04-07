@@ -47,7 +47,7 @@ export default function FlipCard({ card, onClick, size }: Props) {
           }`}
         >
           <span className={sizeClasses[size].split(" ").pop()}>{card.emoji}</span>
-          <span className="text-[8px] sm:text-[9px] text-foreground/70 font-body font-semibold mt-0.5 px-1 text-center leading-tight">
+          <span className="text-[9px] sm:text-[10px] text-foreground/70 font-body font-semibold mt-1 px-1 text-center leading-tight">
             {card.label}
           </span>
         </div>
